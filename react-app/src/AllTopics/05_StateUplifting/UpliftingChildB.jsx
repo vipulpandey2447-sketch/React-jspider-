@@ -1,0 +1,13 @@
+import React from 'react'
+
+const UpliftingChildB = ( {handleIncrement}) => {
+  return (
+    <div>
+      <h1>B component</h1>
+      <button onClick={handleIncrement}>Increment </button>
+    </div>
+  )
+}
+
+export default UpliftingChildB;
+
