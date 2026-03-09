@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 const ControlledForms1 = () => {
        const [firstname,setfirstname]=useState("");
         const [lastname,setlastname]=useState("");
+        const [message,setmessge]=useState("");
 
         const handlefirstname=(e)=>{
             setfirstname(e.target.value);
@@ -18,11 +19,13 @@ const ControlledForms1 = () => {
             fullname:{ firstname , lastname }
          };
          console.log(data);
+
           
         // clearing input feilds
         setfirstname("");
         setlastname("");
- 
+  
+        setmessge(`Welcome ${firstname} ${lastname}`);
         }
 
 
@@ -40,6 +43,7 @@ const ControlledForms1 = () => {
 
         <button>Submit </button>
       </form>
+      {message && <h2>{message}</h2> }
     </div>
   )
 }
