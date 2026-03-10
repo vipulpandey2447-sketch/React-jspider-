@@ -25,7 +25,7 @@ const ControlledForms1 = () => {
         setfirstname("");
         setlastname("");
   
-        setmessge(`Welcome ${firstname} ${lastname}`);
+        setmessge(`Welcome ${firstname} ${lastname} `);
         }
 
 
